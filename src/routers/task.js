@@ -106,4 +106,20 @@ router.patch("/tasks/:id", auth, async (req, res) => {
   }
 });
 
+// //UPLOAD LIBRARY
+// const avatars=multer({
+//   limits:{
+//       fileSize: 1000000,
+//   },
+//       fileFilter(req,file,cb){
+//           if(!file.originalname.match(/\.(png|jpg|jpeg)$/)){
+//               return cb(new Error('File must be jpg/png/jpeg'))
+//           }
+//           cb(undefined,true)
+//           // cb(new Error('File must be a PDF'))
+//           // cb(undefined,true)
+//           // cb(undefined,false)
+//       }
+// })
+
 module.exports = router;
